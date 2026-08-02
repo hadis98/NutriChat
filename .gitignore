@@ -31,6 +31,9 @@ dist/
 flagged/
 gradio_cached_examples/
 
+# Generated evaluation outputs (publish separately)
+results/
+
 # IDEs and operating systems
 .vscode/
 .idea/

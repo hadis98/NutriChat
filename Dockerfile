@@ -31,7 +31,6 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 COPY app.py .
 COPY artifacts ./artifacts
-COPY research_assets ./research_assets
 
 EXPOSE 7860
 
