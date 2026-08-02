@@ -1,0 +1,19 @@
+{
+  "dataset_name": "NutriChat Test Benchmark",
+  "dataset_version": "1.0",
+  "number_of_items": 300,
+  "creation_method": "LLM-assisted generation",
+  "generator_model": "GPT-5.6",
+  "generation_interface": "ChatGPT",
+  "generation_date": "2026-07-12",
+  "prompt_file": "prompts/test_dataset_creation_prompt.txt",
+  "source_materials_provided_to_generator": [
+    "Frozen nutrition textbook PDF",
+    "eval_dataset_200_v2.json"
+  ],
+  "system_outputs_used_during_generation": false,
+  "generated_after_system_development": true,
+  "test_set_used_for_system_selection": false,
+  "human_review": "Programmatic schema and distribution checks were performed. Final system judgments received a targeted LLM-assisted consistency audit, and all proposed pass/fail or safety-status changes were manually verified by the author. No independent nutrition-expert review was conducted.",
+  "notes": "The prompt required exact distributions, development-test separation, textbook grounding, and internal format validation."
+}

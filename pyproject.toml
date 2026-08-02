@@ -1,0 +1,27 @@
+[project]
+name = "nutrichat"
+version = "0.1.0"
+description = "Safety-aware modular RAG system for nutrition question answering"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pymupdf",
+    "spacy",
+    "sentence-transformers",
+    "rank-bm25",
+    "pandas",
+    "numpy",
+    "torch",
+    "tqdm",
+    "openai",
+    "pyyaml",
+    "scikit-learn",
+    "gradio",
+    "python-dotenv",
+    "httpx",
+    "websockets==13.1",
+    "pypdf>=6.14.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nutrichat*"]

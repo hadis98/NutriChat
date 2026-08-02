@@ -1,0 +1,17 @@
+services:
+  nutrichat:
+    build: .
+    ports:
+      - "${HOST_PORT:-7860}:7860"
+    environment:
+      NVIDIA_API_KEY: ${NVIDIA_API_KEY:?Set NVIDIA_API_KEY in .env or your shell}
+      MODEL_NAME: ${MODEL_NAME:-nvidia/llama-3.3-nemotron-super-49b-v1}
+      GRADIO_SERVER_NAME: 0.0.0.0
+      GRADIO_SERVER_PORT: 7860
+      HF_HOME: /cache/huggingface
+      TRANSFORMERS_CACHE: /cache/huggingface
+    volumes:
+      - huggingface-cache:/cache/huggingface
+
+volumes:
+  huggingface-cache:

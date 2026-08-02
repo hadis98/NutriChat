@@ -1,0 +1,40 @@
+{
+  "corpus_id": "nutrichat_human_nutrition_louisiana_frozen_v1",
+  "title": "Human Nutrition",
+  "edition": "Louisiana Edition",
+  "authors": [
+    "Melissa Johnson",
+    "Latoya Paul",
+    "Charlene Shunick",
+    "Alin Basgul Yigiter"
+  ],
+  "editor": "Kelly Kingrey-Edwards",
+  "source_url": "https://louis.pressbooks.pub/nutrition/",
+  "download_date": "2026-07",
+  "metadata_recorded_date": "2026-07-24",
+  "local_filename": "nutrition_textbook.pdf",
+  "local_path": "data/nutrition_textbook.pdf",
+  "sha256": "5ff1c343c625908c30e16b423004233d6bbd9a0578d2376cc33c7a75e38e5dd1",
+  "file_size_bytes": 31547399,
+  "pdf_page_count": 894,
+  "pdf_export_type": "unspecified",
+  "page_number_mapping": {
+    "python_pdf_indexing": "zero-based",
+    "python_formula": "printed_page = zero_based_pdf_index - 19",
+    "viewer_formula": "printed_page = one_based_pdf_viewer_page - 20",
+    "first_numbered_page": {
+      "pdf_viewer_page": 21,
+      "zero_based_pdf_index": 20,
+      "printed_textbook_page": 1
+    },
+    "configured_python_offset": -19
+  },
+  "license": {
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+    "identifier": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "note": "Except where otherwise noted."
+  },
+  "redistributed_in_public_repository": false,
+  "notes": "This exact PDF was used to build the retrieval corpus and evaluate page-level retrieval."
+}

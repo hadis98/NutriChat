@@ -1,0 +1,279 @@
+/* Results/answer area dark mode, with orange active tabs and dark cards. */
+html:is([data-nc-theme='dark'], .nc-theme-dark) .results-layout {
+  margin-top: 26px;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .sources-panel,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostics-panel {
+  color: var(--nc-text);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .side-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .sources-panel,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostics-panel,
+body:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs,
+body:is([data-nc-theme='dark'], .nc-theme-dark) .side-card,
+body:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card,
+body:is([data-nc-theme='dark'], .nc-theme-dark) .sources-panel,
+body:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostics-panel {
+  background: var(--nc-section-dark) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  box-shadow: var(--nc-shadow) !important;
+  color: var(--nc-text) !important;
+}
+
+.nc-theme-dark .result-tabs,
+.nc-theme-dark .side-card,
+.nc-theme-dark .answer-card,
+.nc-theme-dark .sources-panel,
+.nc-theme-dark .diagnostics-panel {
+  background: var(--nc-section-dark) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  box-shadow: var(--nc-shadow) !important;
+  color: var(--nc-text) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs [role='tablist'],
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs .tab-nav,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs .tabs {
+  background: var(--nc-section-dark) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  box-shadow: none !important;
+}
+
+.nc-theme-dark .result-tabs [role='tablist'],
+.nc-theme-dark .result-tabs .tab-nav,
+.nc-theme-dark .result-tabs .tabs {
+  background: var(--nc-section-dark) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  box-shadow: none !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs button,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs [role='tab'],
+.nc-theme-dark .result-tabs button,
+.nc-theme-dark .result-tabs [role='tab'] {
+  color: #c0c7d5 !important;
+  background: transparent !important;
+  border-color: rgba(154, 168, 188, 0.18) !important;
+  box-shadow: none !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-tabs button.selected,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .result-tabs
+  button[aria-selected='true'],
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .result-tabs
+  [role='tab'][aria-selected='true'],
+.nc-theme-dark .result-tabs button.selected,
+.nc-theme-dark .result-tabs button[aria-selected='true'],
+.nc-theme-dark .result-tabs [role='tab'][aria-selected='true'] {
+  color: var(--nc-orange-2) !important;
+  border-bottom-color: var(--nc-orange) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .result-tabs
+  button[aria-selected='true']::after,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .result-tabs
+  [role='tab'][aria-selected='true']::after,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .result-tabs
+  button.selected::after,
+.nc-theme-dark .result-tabs button[aria-selected='true']::after,
+.nc-theme-dark .result-tabs [role='tab'][aria-selected='true']::after,
+.nc-theme-dark .result-tabs button.selected::after {
+  background: var(--nc-orange) !important;
+  box-shadow: 0 0 16px rgba(255, 138, 0, 0.28) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #answer-output,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card .prose,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card p,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card li,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card div {
+  color: #e8ecf4 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card strong,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card b,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card h1,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card h2,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card h3,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card h4,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .side-card h3,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .panel-title-row h2,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostics-panel h2,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card h3 {
+  color: #ffffff !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .answer-card a,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .side-card a {
+  color: var(--nc-orange-2) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .side-card p,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .panel-title-row p,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .muted {
+  color: #c3cad7 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .quick-row {
+  border-bottom-color: rgba(154, 168, 188, 0.17) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .quick-row
+  .quick-row-icon-label {
+  color: #c8ceda !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .quick-row strong:not(.tag) {
+  color: #f8fafc !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-icon,
+#nutrichat-app.nc-theme-dark .result-icon {
+  background: rgba(148, 163, 184, 0.14) !important;
+  color: #d8deeb !important;
+  box-shadow: inset 0 0 0 1px rgba(226, 232, 240, 0.08) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-icon.green,
+#nutrichat-app.nc-theme-dark .result-icon.green {
+  background: rgba(34, 197, 94, 0.16) !important;
+  color: #86efac !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-icon.blue,
+#nutrichat-app.nc-theme-dark .result-icon.blue {
+    color: rgb(8, 119, 255) !important;
+    background: rgb(239, 246, 255) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-icon svg,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .result-icon svg *,
+#nutrichat-app.nc-theme-dark .result-icon svg,
+#nutrichat-app.nc-theme-dark .result-icon svg * {
+  color: inherit !important;
+  stroke: currentColor !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .tag.green,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .evidence-pill {
+  background: rgba(34, 197, 94, 0.17) !important;
+  color: #86efac !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .tag.blue,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .page-badge {
+  background: rgba(59, 130, 246, 0.17) !important;
+  color: #bfdbfe !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .source-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .empty-panel {
+  background: rgba(8, 13, 21, 0.58) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  color: var(--nc-text) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .source-card summary {
+  background: rgba(7, 11, 18, 0.56) !important;
+  border-bottom-color: rgba(154, 168, 188, 0.16) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .source-title {
+  color: #f7f9fd !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .score-pill,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .score-grid div {
+  background: rgba(5, 10, 17, 0.58) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+  color: #dce2ed !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .score-grid span {
+  color: #aeb6c6 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .score-grid strong {
+  color: #f8fafc !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .source-snippet {
+  background: rgba(5, 10, 17, 0.62) !important;
+  border-left-color: var(--nc-orange) !important;
+  color: #d8deeb !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card table {
+  border-color: rgba(154, 168, 188, 0.22);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card th,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card td {
+  border-color: rgba(154, 168, 188, 0.18) !important;
+  color: #d8deeb !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .diagnostic-card th {
+  background: rgba(5, 10, 17, 0.58) !important;
+  color: #b9c1d1 !important;
+}
+
+#nutrichat-app.nc-theme-dark .side-card,
+#nutrichat-app.nc-theme-dark .side-card h3,
+#nutrichat-app.nc-theme-dark .side-card p,
+#nutrichat-app.nc-theme-dark .diagnostics-panel,
+#nutrichat-app.nc-theme-dark .diagnostics-panel h2,
+#nutrichat-app.nc-theme-dark .diagnostic-card,
+#nutrichat-app.nc-theme-dark .diagnostic-card h3,
+#nutrichat-app.nc-theme-dark .diagnostic-card table,
+#nutrichat-app.nc-theme-dark .diagnostic-card th,
+#nutrichat-app.nc-theme-dark .diagnostic-card td {
+  color: #e8ecf4 !important;
+}
+
+#nutrichat-app.nc-theme-dark .quick-row .quick-row-icon-label {
+  color: #c8ceda !important;
+}
+
+#nutrichat-app.nc-theme-dark .quick-row strong:not(.tag) {
+  color: #f8fafc !important;
+}
+
+#nutrichat-app.nc-theme-dark .diagnostic-card th {
+  background: rgba(5, 10, 17, 0.58) !important;
+  color: #b9c1d1 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .diagnostic-card
+  tr:last-child
+  td,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .diagnostic-card
+  tr:last-child
+  td
+  strong {
+  color: var(--nc-orange-2) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .empty-panel {
+  border-style: dashed;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .gradio-container .prose,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .gradio-container .prose * {
+  color: inherit;
+}
+

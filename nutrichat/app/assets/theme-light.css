@@ -1,0 +1,105 @@
+/* Light theme variables and light-only overrides. */
+
+:root {
+  --nc-bg: #f7fbfd;
+  --nc-card: rgba(255, 255, 255, 0.94);
+  --nc-card-solid: #ffffff;
+  --nc-text: #18233a;
+  --nc-heading: #17223a;
+  --nc-muted: #647087;
+  --nc-soft: #eef6f1;
+  --nc-green: #0b8b4b;
+  --nc-green-2: #15a867;
+  --nc-green-3: #dff5e8;
+  --nc-blue: #155dfc;
+  --nc-blue-2: #2563eb;
+  --nc-line: #dce5ee;
+  --nc-input: #ffffff;
+  --nc-shadow:
+    0 20px 45px rgba(27, 42, 74, 0.09), 0 1px 2px rgba(27, 42, 74, 0.06);
+  --nc-shadow-soft: 0 13px 34px rgba(27, 42, 74, 0.08);
+  --nc-radius-xl: 22px;
+  --nc-radius-lg: 16px;
+  --nc-radius-md: 12px;
+}
+
+html,
+body,
+.gradio-container,
+main,
+#nutrichat-app {
+  min-height: 100%;
+  background:
+    radial-gradient(
+      circle at 15% 18%,
+      rgba(18, 178, 101, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 86% 10%,
+      rgba(37, 99, 235, 0.06),
+      transparent 31%
+    ),
+    linear-gradient(135deg, #f8fcfb 0%, #fbfdff 45%, #f4f9fd 100%);
+  color: var(--nc-text);
+}
+
+/* Light-theme example question icon colors */
+html:not([data-nc-theme='dark']):not(.nc-theme-dark) .nc-example-card {
+  grid-template-columns: 46px 1fr 14px !important;
+  gap: 12px !important;
+}
+
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-example-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: #dcfce7 !important;
+  color: #047857 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  flex: 0 0 38px;
+}
+
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-example-icon
+  svg {
+  width: 22px;
+  height: 22px;
+  color: #047857 !important;
+  stroke: currentColor !important;
+}
+
+/* Override old per-icon colors in light mode */
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-droplet,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-bone,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-cube,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-blocks,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-user,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-stethoscope,
+html:not([data-nc-theme='dark']):not(.nc-theme-dark)
+  .nc-example-card
+  .nc-icon-shield_diamond {
+  color: #047857 !important;
+}
+
+#nc-app-shell {
+  color: #0f172a !important;
+}

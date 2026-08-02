@@ -1,0 +1,198 @@
+/* Dark shell, brand, safety banner, input, mode picker, and submit button. */
+
+/* Dark logo: green + orange, matching the dark reference instead of blue. */
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-bubble-a {
+  background: linear-gradient(135deg, #50d75e 0%, #0d8f45 100%);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-bubble-b {
+  background: linear-gradient(135deg, #7ade68 0%, #17ad5f 100%);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-bubble-c {
+  background: linear-gradient(135deg, #ffb44a 0%, #f97316 54%, #d85f05 100%);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-bubble-d {
+  background: #ffad45;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-bubble {
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.42),
+    0 0 24px rgba(255, 138, 0, 0.08);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-brand-text {
+  color: #f6f7fb;
+  text-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  .nc-brand-text
+  span:last-child {
+  color: var(--nc-green);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-tagline {
+  color: var(--nc-orange-2) !important;
+  text-shadow: 0 0 24px rgba(255, 138, 0, 0.12);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-subtagline {
+  color: #b5bdcc;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  .nc-safety-banner {
+  background: var(--nc-section-dark);
+  border-color: rgba(255, 138, 0, 0.34);
+  color: #d8dde8;
+  box-shadow: var(--nc-shadow-soft);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-safety-banner strong {
+  color: #ffffff;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-safety-banner a {
+  color: var(--nc-orange-2) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-shield {
+  color: var(--nc-orange);
+  border-color: rgba(255, 138, 0, 0.9);
+  background: rgba(255, 138, 0, 0.08);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-green-soft{
+  background: rgba(255, 138, 0, 0.13) !important;
+  color: var(--nc-orange) !important;
+  border-color: rgba(255, 138, 0, 0.22) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 138, 0, 0.1);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-copy small {
+  color: #aeb6c6 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-question {
+  background: rgba(8, 13, 21, 0.78) !important;
+  border-color: rgba(154, 168, 188, 0.28) !important;
+  color: #f8fafc !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-question::placeholder {
+  color: #8d96a6 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-question:focus {
+  border-color: rgba(255, 138, 0, 0.58) !important;
+  box-shadow:
+    0 0 0 3px rgba(255, 138, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-counter {
+  color: #b7becb !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-button,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-select-shell {
+  background: rgba(8, 13, 21, 0.78) !important;
+  border-color: rgba(154, 168, 188, 0.26) !important;
+  color: #eef2f8 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-button:hover,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-select-shell:hover {
+  border-color: rgba(255, 138, 0, 0.52) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-leading,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-select-icon,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-caret,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-select-caret {
+  color: var(--nc-orange) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-menu {
+  background: rgba(10, 15, 23, 0.98) !important;
+  border-color: rgba(154, 168, 188, 0.27) !important;
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.48) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-mode-menu {
+  background: rgba(10, 15, 23, 0.98) !important;
+  border-color: rgba(154, 168, 188, 0.27) !important;
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.48) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-option {
+  color: #dce2ed !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-mode-option {
+  color: #dce2ed !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-option:hover,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-mode-option.active {
+  background: rgba(255, 138, 0, 0.14) !important;
+  color: #ffb04a !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-mode-option:hover,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-advanced-mode-option.active {
+  background: rgba(255, 138, 0, 0.14) !important;
+  color: #ffb04a !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-advanced-mode-option.active::after {
+  color: #ffb04a !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit {
+  border-color: rgba(255, 138, 0, 0.8) !important;
+  background: linear-gradient(
+    180deg,
+    #ff9b19 0%,
+    #f97316 44%,
+    #c75705 100%
+  ) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 14px 34px rgba(255, 138, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit:hover {
+  box-shadow:
+    0 18px 44px rgba(255, 138, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.23) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit:disabled,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit.is-loading {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none !important;
+  box-shadow:
+    0 10px 24px rgba(255, 138, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit:disabled:hover,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-submit.is-loading:hover {
+  transform: none !important;
+  box-shadow:
+    0 10px 24px rgba(255, 138, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}

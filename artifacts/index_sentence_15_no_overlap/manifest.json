@@ -1,0 +1,16 @@
+{
+  "artifact_version": 1,
+  "chunking_strategy": "sentence_15_no_overlap",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "normalized_embeddings": true,
+  "num_chunks": 1212,
+  "embedding_shape": [
+    1212,
+    384
+  ],
+  "embedding_dtype": "float32",
+  "files": {
+    "chunks.jsonl": "971ab3bb79a7253902e4b74ce80509a68806c20061f23a5d6ad59ec3f37b3768",
+    "embeddings.npy": "1d1f821195157a0f638c4c468b27d5451f29f954653b21d0c5f5b76f85aa3085"
+  }
+}

@@ -1,0 +1,104 @@
+/* Advanced panel orange-dark treatment. */
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-summary {
+  min-height: 86px;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-chevron {
+  color: #c4cad6;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-advanced-panel[open]
+  .nc-advanced-summary {
+  border-bottom: 1px solid rgba(154, 168, 188, 0.16) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-reset-defaults {
+  color: #b7becb !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-reset-defaults:hover {
+  color: var(--nc-orange-2) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-control-card {
+  background: rgba(8, 13, 21, 0.64) !important;
+  border-color: rgba(154, 168, 188, 0.24) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-control-card h4,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-control-head output,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-select-shell select,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-stream-copy strong {
+  color: #f7f9fd !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-control-card p,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-range-line span,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-stream-copy small {
+  color: #aeb7c8 !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-control-head output {
+  background: rgba(7, 12, 19, 0.82) !important;
+  border-color: rgba(154, 168, 188, 0.28) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-range-line
+  input[type='range'] {
+  background: linear-gradient(
+    to right,
+    var(--nc-orange) 0%,
+    var(--nc-orange) var(--nc-range-progress, 0%),
+    rgba(154, 168, 188, 0.22) var(--nc-range-progress, 0%),
+    rgba(154, 168, 188, 0.22) 100%
+  ) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-range-line
+  input[type='range']::-webkit-slider-thumb {
+  border-color: rgba(255, 255, 255, 0.34) !important;
+  background: #f8fafc !important;
+  box-shadow:
+    0 0 0 5px rgba(255, 138, 0, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.28) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-range-line
+  input[type='range']::-moz-range-thumb {
+  border-color: rgba(255, 255, 255, 0.34) !important;
+  background: #f8fafc !important;
+  box-shadow:
+    0 0 0 5px rgba(255, 138, 0, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.28) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-response-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 138, 0, 0.12),
+    rgba(8, 13, 21, 0.68)
+  ) !important;
+  border-color: rgba(255, 138, 0, 0.3) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-response-card h4,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-info-icon {
+  color: var(--nc-orange-2) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-switch-visual {
+  background: rgba(100, 116, 139, 0.48);
+  box-shadow: inset 0 0 0 1px rgba(154, 168, 188, 0.22);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  .nc-stream-toggle
+  input:checked
+  + .nc-switch-visual {
+  background: linear-gradient(135deg, #ffb24a, #f97316) !important;
+}
+

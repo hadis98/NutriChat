@@ -1,0 +1,205 @@
+/* Dark theme tokens and broad compatibility overrides. */
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) {
+  --nc-bg: #06090f;
+  --nc-card: rgba(12, 16, 23, 0.88);
+  --nc-section-dark: rgb(39, 39, 42);
+  --nc-card-solid: #0b1018;
+  --nc-text: #e7eaf1;
+  --nc-heading: #f8fafc;
+  --nc-muted: #a4abb8;
+  --nc-soft: rgba(255, 138, 0, 0.12);
+  --nc-line: rgba(154, 168, 188, 0.23);
+  --nc-input: rgba(12, 17, 25, 0.74);
+  --nc-green: #21bd68;
+  --nc-green-2: #36d778;
+  --nc-orange: #ff8a00;
+  --nc-orange-2: #f59e0b;
+  --nc-orange-3: #ffb24a;
+  --nc-orange-soft: rgba(255, 138, 0, 0.13);
+  --nc-blue: #f59e0b;
+  --nc-blue-2: #ff8a00;
+  --nc-shadow:
+    0 24px 62px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  --nc-shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.34);
+  color-scheme: dark;
+}
+
+.nc-theme-dark {
+  --nc-section-dark: rgb(39, 39, 42);
+  --nc-text: #e7eaf1;
+  --nc-shadow:
+    0 24px 62px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html[data-nc-theme='dark'] #nc-app-shell .nc-theme-track {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(71, 85, 105, 0.9);
+}
+
+html[data-nc-theme='dark'] #nc-app-shell .nc-safety-banner a {
+  color: #93c5fd;
+}
+
+html[data-nc-theme='dark'] .nc-card {
+  border-color: rgba(71, 85, 105, 0.86);
+}
+
+html[data-nc-theme='dark'] .nc-green-soft {
+  background: #123524;
+  color: #6ee7b7;
+}
+
+html[data-nc-theme='dark'] #nc-question {
+  border-color: #334155;
+}
+
+html[data-nc-theme='dark'] .nc-mode-button {
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+html[data-nc-theme='dark'] .nc-mode-option:hover,
+html[data-nc-theme='dark'] .nc-mode-option.active {
+  background: #123524;
+  color: #86efac;
+}
+
+html[data-nc-theme='dark'] .nc-example-tabs button {
+  border-bottom-color: #263448;
+  color: #aab4c4;
+}
+
+html[data-nc-theme='dark'] .nc-example-tabs button.active {
+  color: #86efac;
+}
+
+html[data-nc-theme='dark'] .nc-example-card {
+  border-color: #334155;
+}
+
+html[data-nc-theme='dark'] .nc-examples-card[open] .nc-examples-summary {
+  border-bottom-color: #263448;
+}
+
+html[data-nc-theme='dark'] .nc-control-card {
+  background: rgba(15, 23, 42, 0.7);
+  border-color: #334155;
+}
+
+html[data-nc-theme='dark'] .nc-range-line input[type='range'] {
+  background: linear-gradient(
+    to right,
+    var(--nc-green-2) 0%,
+    var(--nc-green-2) var(--nc-range-progress, 0%),
+    #334155 var(--nc-range-progress, 0%),
+    #334155 100%
+  );
+}
+
+html[data-nc-theme='dark'] .nc-response-card {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 55, 34, 0.88),
+    rgba(15, 23, 42, 0.72)
+  );
+  border-color: #166534;
+}
+
+html[data-nc-theme='dark'] .nc-response-card h4 {
+  color: #86efac;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark),
+html:is([data-nc-theme='dark'], .nc-theme-dark) body,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .gradio-container,
+html:is([data-nc-theme='dark'], .nc-theme-dark) main,
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nutrichat-app {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(31, 130, 73, 0.12), transparent 30%),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 138, 0, 0.055),
+      transparent 32%
+    ),
+    linear-gradient(180deg, #080b11 0%, #050912 52%, #050912 100%) !important;
+  color: var(--nc-text) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #main-container {
+  max-width: 1160px !important;
+  padding-top: 28px !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-card,
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  .nc-advanced-panel {
+  background: var(--nc-section-dark);
+  border-color: rgba(154, 168, 188, 0.24);
+  box-shadow: var(--nc-shadow);
+  backdrop-filter: blur(12px);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-card h2,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-card h3,
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-advanced-copy strong {
+  color: #f8fafc;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) .nc-top-actions {
+  top: 0;
+  right: 0;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-switch,
+body:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-switch {
+  width: 94px;
+  height: 44px;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-track,
+body:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-track {
+  background: rgba(12, 16, 23, 0.88) !important;
+  border-color: rgba(154, 168, 188, 0.2) !important;
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  .nc-theme-track::after,
+body:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  .nc-theme-track::after {
+  background: rgba(255, 138, 0, 0.16) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 138, 0, 0.48),
+    0 0 22px rgba(255, 138, 0, 0.18) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  #theme-toggle:checked
+  + .nc-theme-track::after,
+body:is([data-nc-theme='dark'], .nc-theme-dark)
+  #nc-app-shell
+  #theme-toggle:checked
+  + .nc-theme-track::after {
+  background: rgba(255, 138, 0, 0.18) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 138, 0, 0.5),
+    0 0 22px rgba(255, 138, 0, 0.18) !important;
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-sun,
+body:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-sun {
+  color: var(--nc-orange) !important;
+  text-shadow: 0 0 18px rgba(255, 138, 0, 0.45);
+}
+
+html:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-moon,
+body:is([data-nc-theme='dark'], .nc-theme-dark) #nc-app-shell .nc-theme-moon {
+  color: #c9d1df !important;
+}
