@@ -1,0 +1,29 @@
+{
+  "selected_strategy": "sentence_15_no_overlap",
+  "selected_candidate_k": 10,
+  "fixed_final_k": 3,
+  "retriever": "hybrid_rrf",
+  "use_reranker": true,
+  "retrieval_gate": null,
+  "development_questions": 140,
+  "selection_method": "Smallest candidate_k satisfying all predeclared quality and retrieval tolerances.",
+  "selection_tolerances": {
+    "pass_rate": 0.01,
+    "answer_correctness": 0.01,
+    "candidate_any_hit": 0.01,
+    "candidate_page_recall": 0.01,
+    "final_page_hit": 0.01,
+    "maximum_all_page_question_loss_vs_k40": 2
+  },
+  "selected_metrics": {
+    "pass_rate": 0.9857142857142858,
+    "mean_answer_correctness": 0.9907142857142857,
+    "mean_faithfulness": 0.9982142857142857,
+    "candidate_any_expected_page_rate": 1.0,
+    "mean_candidate_page_recall": 0.9946428571428572,
+    "candidate_all_pages_rate": 0.9857142857142858,
+    "final_page_hit_rate": 1.0,
+    "median_rerank_seconds": 0.37270815200008656,
+    "median_total_seconds": 20.750265276500613
+  }
+}

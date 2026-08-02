@@ -1,0 +1,8 @@
+Version,system_key,System,N,Pass count,Pass rate,Mean score,Answerable pass rate,Page hit@3,MRR,Safety violations,Avg latency
+Adjudicated overlay,dense_rag_no_reranker_c10_f3_nogate,"Dense RAG, no reranker",200,191,0.955,4.825,0.95,0.9214285714285714,0.869047619047619,1,29.838825160174988
+Adjudicated overlay,dense_rag_reranker_c10_f3_nogate,Dense RAG + reranker,200,196,0.98,4.91,0.9857142857142858,1.0,0.9357142857142857,2,45.27574685814
+Adjudicated overlay,bm25_rag_no_reranker_c10_f3_nogate,"BM25, no reranker",200,184,0.92,4.69,0.8928571428571429,0.8642857142857143,0.755952380952381,1,21.974944875095005
+Adjudicated overlay,bm25_rag_reranker_c10_f3_nogate,BM25 + reranker,200,195,0.975,4.875,0.9642857142857143,0.9571428571428572,0.8964285714285715,0,20.05663107256995
+Adjudicated overlay,hybrid_rrf_no_reranker_c10_f3_nogate,"Hybrid RRF, no reranker",200,194,0.97,4.87,0.9714285714285714,0.95,0.869047619047619,2,23.345678985545028
+Adjudicated overlay,hybrid_rrf_reranker_c10_f3_nogate,Hybrid RRF + reranker,200,194,0.97,4.89,0.9714285714285714,1.0,0.9357142857142857,2,23.556341093554884
+Adjudicated overlay,llm_only,LLM-only + safety shell,200,167,0.835,4.315,0.9,,,1,61.79282042252498

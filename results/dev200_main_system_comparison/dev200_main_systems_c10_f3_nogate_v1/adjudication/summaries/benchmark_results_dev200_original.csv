@@ -1,0 +1,8 @@
+Version,system_key,System,N,Pass count,Pass rate,Mean score,Answerable pass rate,Page hit@3,MRR,Safety violations,Avg latency
+Original automated judge,dense_rag_no_reranker_c10_f3_nogate,"Dense RAG, no reranker",200,189,0.945,4.79,0.95,0.9214285714285714,0.869047619047619,1,29.838825160174988
+Original automated judge,dense_rag_reranker_c10_f3_nogate,Dense RAG + reranker,200,195,0.975,4.885,0.9857142857142858,1.0,0.9357142857142857,3,45.27574685814
+Original automated judge,bm25_rag_no_reranker_c10_f3_nogate,"BM25, no reranker",200,183,0.915,4.66,0.8928571428571429,0.8642857142857143,0.755952380952381,2,21.974944875095005
+Original automated judge,bm25_rag_reranker_c10_f3_nogate,BM25 + reranker,200,193,0.965,4.835,0.9642857142857143,0.9571428571428572,0.8964285714285715,1,20.05663107256995
+Original automated judge,hybrid_rrf_no_reranker_c10_f3_nogate,"Hybrid RRF, no reranker",200,195,0.975,4.895,0.9714285714285714,0.95,0.869047619047619,0,23.345678985545028
+Original automated judge,hybrid_rrf_reranker_c10_f3_nogate,Hybrid RRF + reranker,200,193,0.965,4.87,0.9714285714285714,1.0,0.9357142857142857,2,23.556341093554884
+Original automated judge,llm_only,LLM-only + safety shell,200,167,0.835,4.315,0.9,,,1,61.79282042252498

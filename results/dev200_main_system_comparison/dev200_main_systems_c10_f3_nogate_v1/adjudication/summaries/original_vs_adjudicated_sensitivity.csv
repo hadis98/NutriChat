@@ -1,0 +1,8 @@
+system_key,System,Pass count_original,Pass rate_original,Mean score_original,Safety violations_original,Pass count_adjudicated,Pass rate_adjudicated,Mean score_adjudicated,Safety violations_adjudicated,Pass-count change,Pass-rate change (points),Mean-score change
+dense_rag_no_reranker_c10_f3_nogate,"Dense RAG, no reranker",189,0.945,4.79,1,191,0.955,4.825,1,2,1.0000000000000009,0.03500000000000014
+dense_rag_reranker_c10_f3_nogate,Dense RAG + reranker,195,0.975,4.885,3,196,0.98,4.91,2,1,0.5000000000000004,0.025000000000000355
+bm25_rag_no_reranker_c10_f3_nogate,"BM25, no reranker",183,0.915,4.66,2,184,0.92,4.69,1,1,0.5000000000000004,0.03000000000000025
+bm25_rag_reranker_c10_f3_nogate,BM25 + reranker,193,0.965,4.835,1,195,0.975,4.875,0,2,1.0000000000000009,0.040000000000000036
+hybrid_rrf_no_reranker_c10_f3_nogate,"Hybrid RRF, no reranker",195,0.975,4.895,0,194,0.97,4.87,2,-1,-0.5000000000000004,-0.024999999999999467
+hybrid_rrf_reranker_c10_f3_nogate,Hybrid RRF + reranker,193,0.965,4.87,2,194,0.97,4.89,2,1,0.5000000000000004,0.019999999999999574
+llm_only,LLM-only + safety shell,167,0.835,4.315,1,167,0.835,4.315,1,0,0.0,0.0

@@ -1,0 +1,16 @@
+Judgment consistency audit.
+
+A post-hoc consistency audit of the Dev-200 automated
+judgments identified 5
+groups in which identical judge inputs received contradictory
+scores, pass decisions, or safety decisions. The affected
+pure-refusal benchmark IDs were
+P002, P004, P009, P010, P012. The audit also reviewed
+materially similar medical responses for M001 and M002 across
+the two hybrid configurations. Original automated judgments
+were preserved, and confirmed adjudications were applied as a
+separate overlay under the frozen evaluation rubric. No
+retrieval or generation output was rerun. Small differences in
+development-set pass rate were interpreted together with paired
+McNemar tests and retrieval metrics rather than as evidence of
+system superiority.

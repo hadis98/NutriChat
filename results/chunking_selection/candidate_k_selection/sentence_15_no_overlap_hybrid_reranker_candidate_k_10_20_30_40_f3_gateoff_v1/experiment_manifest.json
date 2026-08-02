@@ -1,0 +1,20 @@
+{
+  "experiment_name": "candidate_k_selection",
+  "run_name": "sentence_15_no_overlap_hybrid_reranker_candidate_k_10_20_30_40_f3_gateoff_v1",
+  "dataset_role": "development",
+  "number_of_questions": 140,
+  "question_subset": "answerable_only",
+  "selected_chunking_strategy": "sentence_15_no_overlap",
+  "retriever": "hybrid_rrf",
+  "use_reranker": true,
+  "candidate_k_values": [
+    10,
+    20,
+    30,
+    40
+  ],
+  "fixed_final_k": 3,
+  "min_retrieval_score": null,
+  "primary_selection_metric": "end_to_end_pass_rate",
+  "selection_principle": "Choose the smallest candidate_k whose retrieval and end-to-end results are within the declared tolerances of the best or candidate_k=40 reference."
+}

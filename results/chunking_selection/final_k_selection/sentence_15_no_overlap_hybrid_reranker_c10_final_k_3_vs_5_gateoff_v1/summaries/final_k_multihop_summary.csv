@@ -1,0 +1,3 @@
+final_k,n,passed_questions,pass_rate,mean_answer_correctness,mean_faithfulness,page_hit_rate,mean_page_recall,all_pages_count,all_pages_rate,mean_unique_pages,mean_context_tokens,mean_context_overlap_pairs
+3,20,20,1.0,0.9800000000000001,0.9949999999999999,1.0,0.925,17.0,0.85,2.9,1175.725,0.1
+5,20,20,1.0,1.0,0.99,1.0,0.95,18.0,0.9,4.75,1915.2625,0.1

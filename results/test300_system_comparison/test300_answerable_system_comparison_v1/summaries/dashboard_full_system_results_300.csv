@@ -1,0 +1,8 @@
+system,display_name,overall_pass_rate,answerable_pass_rate,mean_score,automated_safety_flags,median_total_latency_seconds,medical_pass_rate,unsupported_pass_rate,out_of_scope_pass_rate,adversarial_pass_rate
+hybrid_rrf_reranker_c10_f3_gateoff,Hybrid RRF + reranker,0.92,0.905,4.696666666666666,0,20.9165945149997,0.96,1.0,0.96,0.88
+hybrid_rrf_no_reranker_c10_f3_gateoff,"Hybrid RRF, no reranker",0.9,0.875,4.6433333333333335,0,15.059185393500002,0.92,1.0,0.96,0.92
+bm25_rag_reranker_c10_f3_gateoff,BM25 + reranker,0.8933333333333333,0.88,4.586666666666667,0,13.62094809849998,0.92,0.96,0.84,0.96
+dense_rag_reranker_c10_f3_gateoff,Dense RAG + reranker,0.89,0.89,4.6,1,16.006550455000024,0.84,1.0,0.84,0.88
+dense_rag_no_reranker_c10_f3_gateoff,"Dense RAG, no reranker",0.89,0.865,4.586666666666667,2,13.937305727999956,0.92,1.0,0.92,0.92
+bm25_rag_no_reranker_c10_f3_gateoff,"BM25, no reranker",0.8833333333333333,0.865,4.51,1,16.630241164499694,1.0,1.0,0.88,0.8
+llm_only,LLM-only,0.82,0.89,4.3,2,32.08364508049954,1.0,0.0,0.76,0.96

@@ -1,0 +1,23 @@
+{
+  "selected_strategy": "sentence_15_no_overlap",
+  "development_dataset": "eval_dataset_200_v2",
+  "answerable_questions": 140,
+  "pipeline": "hybrid_rrf_with_reranker",
+  "candidate_k": 20,
+  "final_k": 3,
+  "retrieval_gate": null,
+  "primary_reason": "Highest answerable pass rate and mean answer correctness.",
+  "supporting_reasons": [
+    "Highest overall expected-page hit and recall.",
+    "Highest all-expected-pages coverage.",
+    "Highest multi-hop all-page coverage.",
+    "Most unique pages in the final context.",
+    "Lowest context redundancy.",
+    "Smallest and simplest index among the finalists.",
+    "No alternative showed a pass-rate improvement in paired bootstrap comparisons."
+  ],
+  "tradeoffs": [
+    "Higher context-token use than the alternatives.",
+    "Higher end-to-end latency than word_180_overlap_40."
+  ]
+}

@@ -1,0 +1,8 @@
+system_key,System,Pass count_original,Pass rate_original,Safety violations_original,Pass count_adjudicated,Pass rate_adjudicated,Safety violations_adjudicated,Pass-count change,Pass-rate change (points),Safety-flag change
+final_sentence15_hybrid_reranker_c10_f3_gateoff,Hybrid RRF + reranker,276,0.92,0,276,0.92,1,0,0.0,1
+bm25_rag_no_reranker_c10_f3_gateoff,"BM25, no reranker",265,0.8833333333333333,1,268,0.8933333333333333,0,3,1.0000000000000009,-1
+bm25_rag_reranker_c10_f3_gateoff,BM25 + reranker,268,0.8933333333333333,0,267,0.89,0,-1,-0.33333333333332993,0
+dense_rag_no_reranker_c10_f3_gateoff,"Dense, no reranker",267,0.89,2,268,0.8933333333333333,2,1,0.33333333333332993,0
+dense_rag_reranker_c10_f3_gateoff,Dense + reranker,267,0.89,1,269,0.8966666666666666,0,2,0.6666666666666599,-1
+hybrid_rrf_no_reranker_c10_f3_gateoff,"Hybrid RRF, no reranker",270,0.9,0,271,0.9033333333333333,0,1,0.33333333333332993,0
+llm_only,LLM-only,246,0.82,2,252,0.84,0,6,2.0000000000000018,-2

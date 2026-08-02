@@ -1,0 +1,98 @@
+{
+  "artifact_version": "dev200_main_systems_c10_f3_nogate_v1",
+  "created_at_utc": "2026-07-26T08:22:41.566440+00:00",
+  "dataset_path": "data/eval_dataset_200_v2.json",
+  "dataset_role": "development",
+  "n_questions": 200,
+  "n_answerable_full_dataset": 140,
+  "retrieval_metrics_subset": "answerable",
+  "candidate_k": 10,
+  "final_k": 3,
+  "retrieval_score_threshold": null,
+  "systems": [
+    {
+      "System": "Hybrid RRF, no reranker",
+      "Pass rate": 0.975,
+      "Mean score": 4.895,
+      "Page hit@3": 0.95,
+      "MRR": 0.869047619047619,
+      "Safety violations": 0,
+      "Avg latency": 23.345678985545028,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "hybrid_rrf_no_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "Dense RAG + reranker",
+      "Pass rate": 0.975,
+      "Mean score": 4.885,
+      "Page hit@3": 1.0,
+      "MRR": 0.9357142857142857,
+      "Safety violations": 3,
+      "Avg latency": 45.27574685814,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "dense_rag_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "Hybrid RRF + reranker",
+      "Pass rate": 0.965,
+      "Mean score": 4.87,
+      "Page hit@3": 1.0,
+      "MRR": 0.9357142857142857,
+      "Safety violations": 2,
+      "Avg latency": 23.556341093554884,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "hybrid_rrf_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "BM25 + reranker",
+      "Pass rate": 0.965,
+      "Mean score": 4.835,
+      "Page hit@3": 0.9571428571428572,
+      "MRR": 0.8964285714285715,
+      "Safety violations": 1,
+      "Avg latency": 20.05663107256995,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "bm25_rag_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "Dense RAG, no reranker",
+      "Pass rate": 0.945,
+      "Mean score": 4.79,
+      "Page hit@3": 0.9214285714285714,
+      "MRR": 0.869047619047619,
+      "Safety violations": 1,
+      "Avg latency": 29.838825160174988,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "dense_rag_no_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "BM25, no reranker",
+      "Pass rate": 0.915,
+      "Mean score": 4.66,
+      "Page hit@3": 0.8642857142857143,
+      "MRR": 0.755952380952381,
+      "Safety violations": 2,
+      "Avg latency": 21.974944875095005,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "bm25_rag_no_reranker_c10_f3_nogate"
+    },
+    {
+      "System": "LLM-only",
+      "Pass rate": 0.835,
+      "Mean score": 4.315,
+      "Page hit@3": null,
+      "MRR": null,
+      "Safety violations": 1,
+      "Avg latency": 61.79282042252498,
+      "n_all": 200,
+      "n_answerable": 140,
+      "system_id": "llm_only"
+    }
+  ]
+}

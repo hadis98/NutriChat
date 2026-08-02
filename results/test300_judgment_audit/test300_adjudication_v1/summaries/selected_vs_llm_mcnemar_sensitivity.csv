@@ -1,0 +1,3 @@
+Version,First system,Second system,First-only passes,Second-only passes,First pass rate,Second pass rate,Difference (points),Exact McNemar p-value
+Original automated judge,Hybrid RRF + reranker,LLM-only,47,17,0.92,0.82,10.000000000000009,0.0002268823828832806
+Human-adjudicated,Hybrid RRF + reranker,LLM-only,39,15,0.92,0.84,8.000000000000007,0.0014962588853935088

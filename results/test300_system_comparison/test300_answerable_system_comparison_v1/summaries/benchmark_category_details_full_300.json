@@ -1,0 +1,492 @@
+{
+  "artifact_version": "test300_answerable_system_comparison_v1",
+  "dataset": "audited NutriChat test-300 v1.1",
+  "n_questions": 300,
+  "category_results": [
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 20,
+      "pass_rate": 0.8,
+      "mean_score": 4.08,
+      "safety_violations": 1
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 22,
+      "pass_rate": 0.88,
+      "mean_score": 4.56,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 173,
+      "pass_rate": 0.865,
+      "mean_score": 4.435,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.84,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.6,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 21,
+      "pass_rate": 0.84,
+      "mean_score": 4.4,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 176,
+      "pass_rate": 0.88,
+      "mean_score": 4.54,
+      "safety_violations": 0
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.88,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.72,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.56,
+      "safety_violations": 2
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.68,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 173,
+      "pass_rate": 0.865,
+      "mean_score": 4.51,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 22,
+      "pass_rate": 0.88,
+      "mean_score": 4.56,
+      "safety_violations": 1
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 21,
+      "pass_rate": 0.84,
+      "mean_score": 4.36,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 21,
+      "pass_rate": 0.84,
+      "mean_score": 4.4,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 178,
+      "pass_rate": 0.89,
+      "mean_score": 4.61,
+      "safety_violations": 0
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.76,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.52,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.8,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 175,
+      "pass_rate": 0.875,
+      "mean_score": 4.585,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 4.96,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 22,
+      "pass_rate": 0.88,
+      "mean_score": 4.52,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.72,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.84,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 181,
+      "pass_rate": 0.905,
+      "mean_score": 4.66,
+      "safety_violations": 0
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "llm_only",
+      "safety_label": "adversarial",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.88,
+      "safety_violations": 0
+    },
+    {
+      "system": "llm_only",
+      "safety_label": "medical",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0,
+      "safety_violations": 0
+    },
+    {
+      "system": "llm_only",
+      "safety_label": "out_of_scope",
+      "n": 25,
+      "passed": 19,
+      "pass_rate": 0.76,
+      "mean_score": 4.16,
+      "safety_violations": 0
+    },
+    {
+      "system": "llm_only",
+      "safety_label": "safe",
+      "n": 200,
+      "passed": 178,
+      "pass_rate": 0.89,
+      "mean_score": 4.62,
+      "safety_violations": 0
+    },
+    {
+      "system": "llm_only",
+      "safety_label": "unsupported",
+      "n": 25,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "mean_score": 0.6,
+      "safety_violations": 2
+    }
+  ],
+  "expected_behavior_results": [
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 173,
+      "pass_rate": 0.865,
+      "mean_score": 4.435
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0
+    },
+    {
+      "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 67,
+      "pass_rate": 0.8933333333333333,
+      "mean_score": 4.546666666666667
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 176,
+      "pass_rate": 0.88,
+      "mean_score": 4.54
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.6
+    },
+    {
+      "system": "bm25_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 69,
+      "pass_rate": 0.92,
+      "mean_score": 4.706666666666667
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 173,
+      "pass_rate": 0.865,
+      "mean_score": 4.51
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.56
+    },
+    {
+      "system": "dense_rag_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 71,
+      "pass_rate": 0.9466666666666667,
+      "mean_score": 4.8
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 178,
+      "pass_rate": 0.89,
+      "mean_score": 4.61
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 21,
+      "pass_rate": 0.84,
+      "mean_score": 4.36
+    },
+    {
+      "system": "dense_rag_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 68,
+      "pass_rate": 0.9066666666666666,
+      "mean_score": 4.653333333333333
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 175,
+      "pass_rate": 0.875,
+      "mean_score": 4.585
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 23,
+      "pass_rate": 0.92,
+      "mean_score": 4.52
+    },
+    {
+      "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 72,
+      "pass_rate": 0.96,
+      "mean_score": 4.84
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 181,
+      "pass_rate": 0.905,
+      "mean_score": 4.66
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 24,
+      "pass_rate": 0.96,
+      "mean_score": 4.72
+    },
+    {
+      "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 71,
+      "pass_rate": 0.9466666666666667,
+      "mean_score": 4.786666666666667
+    },
+    {
+      "system": "llm_only",
+      "expected_behavior": "answer",
+      "n": 200,
+      "passed": 178,
+      "pass_rate": 0.89,
+      "mean_score": 4.62
+    },
+    {
+      "system": "llm_only",
+      "expected_behavior": "medical_safe_response",
+      "n": 25,
+      "passed": 25,
+      "pass_rate": 1.0,
+      "mean_score": 5.0
+    },
+    {
+      "system": "llm_only",
+      "expected_behavior": "refuse",
+      "n": 75,
+      "passed": 43,
+      "pass_rate": 0.5733333333333334,
+      "mean_score": 3.2133333333333334
+    }
+  ]
+}

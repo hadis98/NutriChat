@@ -1,0 +1,82 @@
+{
+  "audit_id": "test300_judgment_adjudication_v1",
+  "created_at_utc": "2026-07-28T06:18:05.238025+00:00",
+  "source_files": [
+    {
+      "source_file": "final_sentence15_hybrid_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_final/test300_final_v1/judged/final_sentence15_hybrid_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "final_sentence15_hybrid_reranker_c10_f3_gateoff",
+      "sha256": "c1b99447ef1c85a70ca67e898c14fbd1bba23d20205308bf859d76b6abcb6882"
+    },
+    {
+      "source_file": "bm25_rag_no_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/bm25_rag_no_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "bm25_rag_no_reranker_c10_f3_gateoff",
+      "sha256": "51abf084ea1475d80bc1d541e2985f5b75f88ae0fbf4869593212807004a431b"
+    },
+    {
+      "source_file": "bm25_rag_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/bm25_rag_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "bm25_rag_reranker_c10_f3_gateoff",
+      "sha256": "a0c150d8f511de6c2c34438c82b793054fe837a3b1f5e63e2a0e20506f13a810"
+    },
+    {
+      "source_file": "dense_rag_no_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/dense_rag_no_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "dense_rag_no_reranker_c10_f3_gateoff",
+      "sha256": "570433bcb6129387477c040811403220d0c34b28d551ae68107f27dfb7e77930"
+    },
+    {
+      "source_file": "dense_rag_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/dense_rag_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "dense_rag_reranker_c10_f3_gateoff",
+      "sha256": "b739570b7fe5167b4fe70f12f458e6dc3f3d57d7a71da5e2bd956ef1c37d636d"
+    },
+    {
+      "source_file": "hybrid_rrf_no_reranker_c10_f3_gateoff_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/hybrid_rrf_no_reranker_c10_f3_gateoff_judged.csv",
+      "rows": 300,
+      "system_key": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+      "sha256": "71083336c78c89d1a9862e11730f36db8d1235af7d3ad39730ef1ba5e7d0d5a3"
+    },
+    {
+      "source_file": "llm_only_judged.csv",
+      "path": "results/test300_system_comparison/test300_answerable_system_comparison_v1/judged/llm_only_judged.csv",
+      "rows": 300,
+      "system_key": "llm_only",
+      "sha256": "6c42cefd843badbdf86cf325c1b8725f4ed1fae55b6e54edcdd380cf51606a28"
+    }
+  ],
+  "original_files_modified": false,
+  "selection": {
+    "exact_input_contradiction_groups": 10,
+    "selected_system_failures": 24,
+    "selected_vs_llm_discordant_ids": 64,
+    "random_pass_sample_plan": {
+      "answer": 15,
+      "medical_safe_response": 5,
+      "refuse": 10
+    },
+    "unique_human_review_items": 171,
+    "result_rows_covered": 230
+  },
+  "adjudication": {
+    "changed_result_rows": 79,
+    "reviewers": [
+      "Hadis Ghafouri (author-verified outcome; rationale auto-filled from existing audit notes)",
+      "OpenAI GPT-5.6 Thinking (AI-assisted draft; author verification required)"
+    ],
+    "original_files_modified": false,
+    "overlay": "results/test300_judgment_audit/test300_adjudication_v1/adjudication_overlay_v1.csv"
+  },
+  "outputs": {
+    "human_reviews": "results/test300_judgment_audit/test300_adjudication_v1/human_reviews_validated_v1.csv",
+    "adjudicated_judged": "results/test300_judgment_audit/test300_adjudication_v1/adjudicated_judged",
+    "summaries": "results/test300_judgment_audit/test300_adjudication_v1/summaries"
+  }
+}

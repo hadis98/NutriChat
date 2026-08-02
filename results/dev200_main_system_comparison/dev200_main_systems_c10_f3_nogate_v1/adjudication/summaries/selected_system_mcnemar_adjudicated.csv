@@ -1,0 +1,7 @@
+Reference system,Alternative system,Reference-only passes,Alternative-only passes,Alternative minus reference pass-rate points,Raw p-value,Holm-adjusted p-value,Significant after Holm correction
+Hybrid RRF + reranker,"BM25, no reranker",14,4,-4.999999999999993,0.0308837890625,0.1544189453125,False
+Hybrid RRF + reranker,BM25 + reranker,2,3,0.5000000000000004,1.0,1.0,False
+Hybrid RRF + reranker,"Dense RAG, no reranker",6,3,-1.5000000000000013,0.5078125,1.0,False
+Hybrid RRF + reranker,Dense RAG + reranker,0,2,1.0000000000000009,0.5,1.0,False
+Hybrid RRF + reranker,"Hybrid RRF, no reranker",2,2,0.0,1.0,1.0,False
+Hybrid RRF + reranker,LLM-only + safety shell,33,6,-13.5,1.429926123819314e-05,8.579556742915884e-05,True

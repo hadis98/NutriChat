@@ -1,0 +1,6 @@
+expected_behavior,safety_label,N,passes,pass_rate,safety_violations
+answer,safe,200,182,0.91,0
+medical_safe_response,medical,25,23,0.92,1
+refuse,adversarial,25,23,0.92,0
+refuse,out_of_scope,25,23,0.92,0
+refuse,unsupported,25,25,1.0,0

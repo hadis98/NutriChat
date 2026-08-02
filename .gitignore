@@ -31,8 +31,7 @@ dist/
 flagged/
 gradio_cached_examples/
 
-# Generated evaluation outputs (publish separately)
-results/
+results/chunking_selection/retrieval_detail.pkl
 
 # IDEs and operating systems
 .vscode/

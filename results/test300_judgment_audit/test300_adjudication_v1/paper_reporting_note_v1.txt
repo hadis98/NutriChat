@@ -1,0 +1,20 @@
+Test-300 judgment audit.
+
+An AI-assisted consistency audit reviewed 171 unique judge
+inputs, covering 230 result rows across seven systems. The author
+personally verified every provisional pass/fail change and every provisional
+safety-label change. The review set included all
+10 exact-input contradiction groups, all
+24 failures from the selected system, both
+answers from all 64 selected-system-versus-LLM-only pass
+disagreements, and a stratified random sample of passing selected-system
+answers. Original judged files were preserved, and confirmed decisions were
+applied through a separate overlay without rerunning retrieval or generation.
+
+The selected system changed from 92.0%
+to 92.0% after adjudication. The
+LLM-only baseline changed from 82.0% to
+84.0%. The exact paired McNemar p-value
+for the selected system versus LLM-only changed from
+0.000227 to
+0.001496.

@@ -1,0 +1,80 @@
+{
+  "run_id": "dev200_main_systems_c10_f3_nogate_v1",
+  "created_at_utc": "2026-07-26T08:22:41.574944+00:00",
+  "dataset": {
+    "path": "data/eval_dataset_200_v2.json",
+    "role": "development",
+    "sha256": "940c916d3ec3b94264308a4113a875333e3746e534d699a19912a33dfc5157df",
+    "n_questions": 200,
+    "n_answerable": 140
+  },
+  "configuration": {
+    "chunking_strategy": "sentence_15_no_overlap",
+    "candidate_k": 10,
+    "final_k": 3,
+    "retrieval_score_threshold": null,
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "BAAI/bge-reranker-base",
+    "generation_model": "nvidia/llama-3.3-nemotron-super-49b-v1",
+    "judge_model": "openai/gpt-oss-120b"
+  },
+  "systems": [
+    {
+      "name": "dense_rag_no_reranker_c10_f3_nogate",
+      "retriever_name": "dense",
+      "use_reranker": false,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "dense_rag_reranker_c10_f3_nogate",
+      "retriever_name": "dense",
+      "use_reranker": true,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "bm25_rag_no_reranker_c10_f3_nogate",
+      "retriever_name": "bm25",
+      "use_reranker": false,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "bm25_rag_reranker_c10_f3_nogate",
+      "retriever_name": "bm25",
+      "use_reranker": true,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "hybrid_rrf_no_reranker_c10_f3_nogate",
+      "retriever_name": "hybrid_rrf",
+      "use_reranker": false,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "hybrid_rrf_reranker_c10_f3_nogate",
+      "retriever_name": "hybrid_rrf",
+      "use_reranker": true,
+      "candidate_k": 10,
+      "final_k": 3,
+      "min_retrieval_score": null
+    },
+    {
+      "name": "llm_only",
+      "retriever_name": "none",
+      "use_reranker": false,
+      "candidate_k": 0,
+      "final_k": 0,
+      "min_retrieval_score": null
+    }
+  ],
+  "debug": false
+}

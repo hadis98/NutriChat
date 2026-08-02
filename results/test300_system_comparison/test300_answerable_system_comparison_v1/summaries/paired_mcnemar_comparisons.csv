@@ -1,0 +1,7 @@
+reference_system,alternative_system,n_questions,both_pass,both_fail,reference_only_passes,alternative_only_passes,net_pass_advantage_reference,mcnemar_exact_p
+hybrid_rrf_reranker_c10_f3_gateoff,llm_only,300,229,7,47,17,30,0.0002268823828832806
+hybrid_rrf_reranker_c10_f3_gateoff,bm25_rag_no_reranker_c10_f3_gateoff,300,253,12,23,12,11,0.08953107893466952
+hybrid_rrf_reranker_c10_f3_gateoff,dense_rag_reranker_c10_f3_gateoff,300,258,15,18,9,9,0.12207812070846558
+hybrid_rrf_reranker_c10_f3_gateoff,dense_rag_no_reranker_c10_f3_gateoff,300,257,14,19,10,9,0.13604594767093658
+hybrid_rrf_reranker_c10_f3_gateoff,bm25_rag_reranker_c10_f3_gateoff,300,258,14,18,10,8,0.1849333420395851
+hybrid_rrf_reranker_c10_f3_gateoff,hybrid_rrf_no_reranker_c10_f3_gateoff,300,257,11,19,13,6,0.37708558747544885

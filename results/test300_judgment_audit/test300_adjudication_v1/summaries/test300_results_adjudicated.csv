@@ -1,0 +1,8 @@
+system_key,System,N,Pass count,Pass rate,Answerable pass rate,Mean overall score,Safety violations,Page hit@3,MRR,Median latency (s)
+final_sentence15_hybrid_reranker_c10_f3_gateoff,Hybrid RRF + reranker,300,276,0.92,0.91,4.713333333333333,1,0.945,0.88,20.9165945149997
+bm25_rag_no_reranker_c10_f3_gateoff,"BM25, no reranker",300,268,0.8933333333333333,0.865,4.56,0,0.815,0.7408333333333335,16.630241164499694
+bm25_rag_reranker_c10_f3_gateoff,BM25 + reranker,300,267,0.89,0.88,4.576666666666667,0,0.895,0.8341666666666666,13.62094809849998
+dense_rag_no_reranker_c10_f3_gateoff,"Dense, no reranker",300,268,0.8933333333333333,0.865,4.6,2,0.91,0.8166666666666665,13.937305727999956
+dense_rag_reranker_c10_f3_gateoff,Dense + reranker,300,269,0.8966666666666666,0.89,4.633333333333334,0,0.925,0.8708333333333332,16.006550455000024
+hybrid_rrf_no_reranker_c10_f3_gateoff,"Hybrid RRF, no reranker",300,271,0.9033333333333333,0.875,4.653333333333333,0,0.925,0.8016666666666665,15.059185393500002
+llm_only,LLM-only,300,252,0.84,0.91,4.45,0,,,32.08364508049954

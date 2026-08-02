@@ -1,0 +1,26 @@
+{
+  "experiment_name": "final_k_selection",
+  "dataset_role": "development",
+  "dataset_subset": "answerable_only",
+  "number_of_questions": 140,
+  "selected_chunking_strategy": "sentence_15_no_overlap",
+  "retriever": "hybrid_rrf",
+  "use_reranker": true,
+  "selected_candidate_k": 10,
+  "final_k_values": [
+    3,
+    5
+  ],
+  "min_retrieval_score": null,
+  "primary_metric": "end_to_end_pass_rate",
+  "secondary_metrics": [
+    "answer_correctness",
+    "faithfulness",
+    "multi_hop_correctness",
+    "page_recall",
+    "all_expected_pages_rate",
+    "context_tokens",
+    "context_redundancy"
+  ],
+  "selection_principle": "Keep final_k=3 unless final_k=5 produces a clear answer-quality or multi-hop improvement without a meaningful faithfulness, correctness, or safety regression."
+}

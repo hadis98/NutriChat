@@ -1,0 +1,200 @@
+{
+  "artifact_version": "test300_answerable_system_comparison_v1",
+  "created_at_utc": "2026-07-28T11:48:50.624746+00:00",
+  "dataset": "Audited NutriChat test-300 v1.1",
+  "metric_scopes": {
+    "full_system_results": "All 300 held-out questions",
+    "retrieval_results": "200 answerable held-out questions",
+    "automated_safety_flags": "LLM-judge output; not a substitute for human safety review"
+  },
+  "cards": {
+    "best_overall_pass_rate": {
+      "label": "Best overall pass rate",
+      "value": 0.92,
+      "display_value": "92.0%",
+      "subtitle": "Hybrid RRF + reranker",
+      "metric_scope": "All 300 questions"
+    },
+    "best_page_hit_at_3": {
+      "label": "Best Page hit@3",
+      "value": 0.945,
+      "display_value": "94.5%",
+      "subtitle": "Hybrid RRF + reranker",
+      "metric_scope": "Answerable subset, n=200"
+    },
+    "best_mrr": {
+      "label": "Best MRR",
+      "value": 0.88,
+      "display_value": "0.880",
+      "subtitle": "Hybrid RRF + reranker",
+      "metric_scope": "Answerable subset, n=200"
+    },
+    "automated_safety_flags": {
+      "label": "Automated safety flags",
+      "value": 0,
+      "display_value": "0",
+      "subtitle": "LLM-judge result",
+      "metric_scope": "Selected system, all 300 questions"
+    },
+    "selected_median_latency": {
+      "label": "Selected-system median latency",
+      "value": 20.9165945149997,
+      "display_value": "20.9s",
+      "subtitle": "Hybrid RRF + reranker",
+      "metric_scope": "All 300 questions"
+    }
+  },
+  "tables": {
+    "full_system_results": [
+      {
+        "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+        "display_name": "Hybrid RRF + reranker",
+        "overall_pass_rate": 0.92,
+        "answerable_pass_rate": 0.905,
+        "mean_score": 4.696666666666666,
+        "automated_safety_flags": 0,
+        "median_total_latency_seconds": 20.9165945149997,
+        "medical_pass_rate": 0.96,
+        "unsupported_pass_rate": 1.0,
+        "out_of_scope_pass_rate": 0.96,
+        "adversarial_pass_rate": 0.88
+      },
+      {
+        "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+        "display_name": "Hybrid RRF, no reranker",
+        "overall_pass_rate": 0.9,
+        "answerable_pass_rate": 0.875,
+        "mean_score": 4.6433333333333335,
+        "automated_safety_flags": 0,
+        "median_total_latency_seconds": 15.059185393500002,
+        "medical_pass_rate": 0.92,
+        "unsupported_pass_rate": 1.0,
+        "out_of_scope_pass_rate": 0.96,
+        "adversarial_pass_rate": 0.92
+      },
+      {
+        "system": "bm25_rag_reranker_c10_f3_gateoff",
+        "display_name": "BM25 + reranker",
+        "overall_pass_rate": 0.8933333333333333,
+        "answerable_pass_rate": 0.88,
+        "mean_score": 4.586666666666667,
+        "automated_safety_flags": 0,
+        "median_total_latency_seconds": 13.62094809849998,
+        "medical_pass_rate": 0.92,
+        "unsupported_pass_rate": 0.96,
+        "out_of_scope_pass_rate": 0.84,
+        "adversarial_pass_rate": 0.96
+      },
+      {
+        "system": "dense_rag_reranker_c10_f3_gateoff",
+        "display_name": "Dense RAG + reranker",
+        "overall_pass_rate": 0.89,
+        "answerable_pass_rate": 0.89,
+        "mean_score": 4.6,
+        "automated_safety_flags": 1,
+        "median_total_latency_seconds": 16.006550455000024,
+        "medical_pass_rate": 0.84,
+        "unsupported_pass_rate": 1.0,
+        "out_of_scope_pass_rate": 0.84,
+        "adversarial_pass_rate": 0.88
+      },
+      {
+        "system": "dense_rag_no_reranker_c10_f3_gateoff",
+        "display_name": "Dense RAG, no reranker",
+        "overall_pass_rate": 0.89,
+        "answerable_pass_rate": 0.865,
+        "mean_score": 4.586666666666667,
+        "automated_safety_flags": 2,
+        "median_total_latency_seconds": 13.937305727999956,
+        "medical_pass_rate": 0.92,
+        "unsupported_pass_rate": 1.0,
+        "out_of_scope_pass_rate": 0.92,
+        "adversarial_pass_rate": 0.92
+      },
+      {
+        "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+        "display_name": "BM25, no reranker",
+        "overall_pass_rate": 0.8833333333333333,
+        "answerable_pass_rate": 0.865,
+        "mean_score": 4.51,
+        "automated_safety_flags": 1,
+        "median_total_latency_seconds": 16.630241164499694,
+        "medical_pass_rate": 1.0,
+        "unsupported_pass_rate": 1.0,
+        "out_of_scope_pass_rate": 0.88,
+        "adversarial_pass_rate": 0.8
+      },
+      {
+        "system": "llm_only",
+        "display_name": "LLM-only",
+        "overall_pass_rate": 0.82,
+        "answerable_pass_rate": 0.89,
+        "mean_score": 4.3,
+        "automated_safety_flags": 2,
+        "median_total_latency_seconds": 32.08364508049954,
+        "medical_pass_rate": 1.0,
+        "unsupported_pass_rate": 0.0,
+        "out_of_scope_pass_rate": 0.76,
+        "adversarial_pass_rate": 0.96
+      }
+    ],
+    "retrieval_results": [
+      {
+        "system": "hybrid_rrf_reranker_c10_f3_gateoff",
+        "display_name": "Hybrid RRF + reranker",
+        "answerable_pass_rate": 0.905,
+        "page_hit_at_3": 0.945,
+        "mrr": 0.88,
+        "median_retrieval_latency_seconds": 0.37928848749959343
+      },
+      {
+        "system": "dense_rag_reranker_c10_f3_gateoff",
+        "display_name": "Dense RAG + reranker",
+        "answerable_pass_rate": 0.89,
+        "page_hit_at_3": 0.925,
+        "mrr": 0.8708333333333332,
+        "median_retrieval_latency_seconds": 0.3808532044997719
+      },
+      {
+        "system": "hybrid_rrf_no_reranker_c10_f3_gateoff",
+        "display_name": "Hybrid RRF, no reranker",
+        "answerable_pass_rate": 0.875,
+        "page_hit_at_3": 0.925,
+        "mrr": 0.8016666666666665,
+        "median_retrieval_latency_seconds": 0.019735516500077148
+      },
+      {
+        "system": "dense_rag_no_reranker_c10_f3_gateoff",
+        "display_name": "Dense RAG, no reranker",
+        "answerable_pass_rate": 0.865,
+        "page_hit_at_3": 0.91,
+        "mrr": 0.8166666666666665,
+        "median_retrieval_latency_seconds": 0.012721244999738649
+      },
+      {
+        "system": "bm25_rag_reranker_c10_f3_gateoff",
+        "display_name": "BM25 + reranker",
+        "answerable_pass_rate": 0.88,
+        "page_hit_at_3": 0.895,
+        "mrr": 0.8341666666666666,
+        "median_retrieval_latency_seconds": 0.3829877675001398
+      },
+      {
+        "system": "bm25_rag_no_reranker_c10_f3_gateoff",
+        "display_name": "BM25, no reranker",
+        "answerable_pass_rate": 0.865,
+        "page_hit_at_3": 0.815,
+        "mrr": 0.7408333333333335,
+        "median_retrieval_latency_seconds": 0.0070893580000301
+      },
+      {
+        "system": "llm_only",
+        "display_name": "LLM-only",
+        "answerable_pass_rate": 0.89,
+        "page_hit_at_3": null,
+        "mrr": null,
+        "median_retrieval_latency_seconds": 0.0
+      }
+    ]
+  }
+}

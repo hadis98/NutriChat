@@ -1,0 +1,8 @@
+system,display_name,answerable_pass_rate,page_hit_at_3,mrr,median_retrieval_latency_seconds
+hybrid_rrf_reranker_c10_f3_gateoff,Hybrid RRF + reranker,0.905,0.945,0.88,0.37928848749959343
+dense_rag_reranker_c10_f3_gateoff,Dense RAG + reranker,0.89,0.925,0.8708333333333332,0.3808532044997719
+hybrid_rrf_no_reranker_c10_f3_gateoff,"Hybrid RRF, no reranker",0.875,0.925,0.8016666666666665,0.019735516500077148
+dense_rag_no_reranker_c10_f3_gateoff,"Dense RAG, no reranker",0.865,0.91,0.8166666666666665,0.012721244999738649
+bm25_rag_reranker_c10_f3_gateoff,BM25 + reranker,0.88,0.895,0.8341666666666666,0.3829877675001398
+bm25_rag_no_reranker_c10_f3_gateoff,"BM25, no reranker",0.865,0.815,0.7408333333333335,0.0070893580000301
+llm_only,LLM-only,0.89,,,0.0

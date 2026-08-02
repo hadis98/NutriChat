@@ -1,0 +1,8 @@
+System,Pass count_original,Pass count_adjudicated,Pass-count change,Pass-rate change (points)
+Dense RAG + reranker,195,196,1,0.5000000000000004
+BM25 + reranker,193,195,2,1.0000000000000009
+"Hybrid RRF, no reranker",195,194,-1,-0.5000000000000004
+Hybrid RRF + reranker,193,194,1,0.5000000000000004
+"Dense RAG, no reranker",189,191,2,1.0000000000000009
+"BM25, no reranker",183,184,1,0.5000000000000004
+LLM-only + safety shell,167,167,0,0.0

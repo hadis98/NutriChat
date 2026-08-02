@@ -1,0 +1,84 @@
+{
+  "decision_version": 2,
+  "selection_rule_version": "parsimony_v2",
+  "selected_strategy": "sentence_15_no_overlap",
+  "selected_candidate_k": 10,
+  "selected_final_k": 3,
+  "retriever": "hybrid_rrf",
+  "use_reranker": true,
+  "retrieval_gate": null,
+  "development_questions": 140,
+  "selection_reason": "final_k=5 did not show a statistically clear pass-rate or answer-correctness improvement. Its faithfulness was lower, and it used 63.4% more context. Under the parsimony rule, final_k=3 is retained.",
+  "selection_diagnostics": {
+    "selection_rule_version": "parsimony_v2",
+    "alpha": 0.05,
+    "smaller_k": 3,
+    "larger_k": 5,
+    "pass_gain_is_clear": false,
+    "correctness_gain_is_clear": false,
+    "clear_answer_quality_gain": false,
+    "faithfulness_regression_is_clear": true,
+    "safety_is_not_worse": true,
+    "pass_rate_difference_f5_minus_f3": 0.007142857142857143,
+    "pass_rate_ci_95": [
+      -0.02142857142857143,
+      0.03571428571428571
+    ],
+    "paired_pass_exact_p_value": 1.0,
+    "answer_correctness_difference_f5_minus_f3": 0.007857142857142858,
+    "answer_correctness_ci_95": [
+      -0.010017857142857129,
+      0.02857142857142857
+    ],
+    "faithfulness_difference_f5_minus_f3": -0.008633093525179856,
+    "faithfulness_ci_95": [
+      -0.01654676258992806,
+      -0.0021582733812949635
+    ],
+    "page_recall_difference_f5_minus_f3": 0.02380952380952381,
+    "page_recall_ci_95": [
+      0.008928571428571428,
+      0.042261904761904764
+    ],
+    "all_pages_rate_difference_f5_minus_f3": 0.05714285714285714,
+    "all_pages_rate_ci_95": [
+      0.02142857142857143,
+      0.1
+    ],
+    "mean_context_tokens_f3": 1141.7482142857143,
+    "mean_context_tokens_f5": 1865.755357142857,
+    "context_token_increase_f5_minus_f3": 724.0071428571428,
+    "context_token_increase_percent": 63.412154606266384,
+    "context_token_difference_ci_95": [
+      692.8083482142857,
+      753.8164732142857
+    ],
+    "context_overlap_difference_f5_minus_f3": 0.1357142857142857,
+    "context_overlap_difference_ci_95": [
+      0.05714285714285714,
+      0.2357142857142857
+    ],
+    "safety_violation_rate_f3": 0.0,
+    "safety_violation_rate_f5": 0.0
+  },
+  "paired_pass_result": {
+    "both_pass": 135,
+    "both_fail": 0,
+    "f3_pass_f5_fail": 2,
+    "f3_fail_f5_pass": 3,
+    "net_pass_gain_f5": 1,
+    "exact_p_value": 1.0
+  },
+  "selected_metrics": {
+    "passed_questions": 137,
+    "pass_rate": 0.9785714285714285,
+    "mean_answer_correctness": 0.9835714285714285,
+    "mean_faithfulness": 0.9992805755395684,
+    "page_hit_rate": 1.0,
+    "mean_page_recall": 0.9553571428571429,
+    "all_pages_rate": 0.9,
+    "mean_context_tokens": 1141.7482142857143,
+    "mean_context_overlap_pairs": 0.06428571428571428,
+    "safety_violation_rate": 0.0
+  }
+}
