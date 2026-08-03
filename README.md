@@ -5,7 +5,7 @@
 ### Evaluating Safety-aware retrieval-augmented generation for nutrition textbook question answering
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/hadisghafouri/NutriChat-Paper)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/NutriChat_Paper.pdf)
 [![Status](https://img.shields.io/badge/status-research%20prototype-orange)](#limitations-and-responsible-use)
 
@@ -69,7 +69,6 @@ Audit-adjusted results on the 300-question held-out benchmark:
 
 For the prespecified comparison with LLM-only, Hybrid RRF + reranker had 39 wins and 15 losses on paired pass/fail outcomes. The exact two-sided McNemar test gave **p = 0.00150**.
 
-The main gain was not a higher aggregate pass rate on answerable questions; both systems achieved 91.0% there. The gain came mainly from better handling of **unsupported** and **out-of-scope** requests.
 
 ## Benchmark composition
 
@@ -192,7 +191,7 @@ docker compose down
 
 ## Reproducing the research artifacts
 
-A full rerun requires hosted model access and may not be bit-for-bit deterministic. Generated outputs are written to `results/`, which is currently excluded from Git; the paper and this README contain the frozen aggregate results.
+A full rerun requires hosted model access and may not be bit-for-bit deterministic. Generated outputs are written to `results/`. The paper and this README contain the frozen aggregate results.
 
 Suggested notebook order:
 
@@ -208,7 +207,7 @@ Suggested notebook order:
 
 ## Results
 
-After reproducing the experiments locally, use these directories to trace the paper numbers. These generated files are not currently committed:
+After reproducing the experiments locally, use these directories to trace the paper numbers.
 
 - Final held-out adjudicated rows: `results/test300_judgment_audit/test300_adjudication_v1/adjudicated_judged/`
 - Final held-out summaries: `results/test300_judgment_audit/test300_adjudication_v1/summaries/`
@@ -230,7 +229,7 @@ The selected system had 24 audit-adjusted failures:
 | Factual error | 1 |
 | Retrieval failure | 1 |
 
-These results show that strong page retrieval does not guarantee complete synthesis, correct arithmetic, or well-calibrated refusal behavior.
+These results show that strong page retrieval does not guarantee comprehensive use of the retrieved evidence, correct arithmetic, or well-calibrated refusal behavior.
 
 ## Paper
 
