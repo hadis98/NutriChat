@@ -6,7 +6,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/hadisghafouri/NutriChat-Paper)
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/NutriChat_Paper.pdf)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red)](data/nutrichat-paper.pdf)
 [![Status](https://img.shields.io/badge/status-research%20prototype-orange)](#limitations-and-responsible-use)
 
 **[Try the live app](https://huggingface.co/spaces/hadisghafouri/NutriChat-Paper) · [Read the paper](data/nutrichat-paper.pdf)**
